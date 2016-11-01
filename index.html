@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Homepage</title>
+        <link rel="shortcut icon" href="Images/home-512.png">
+        <script src="jquery-1.11.3.min.js"></script>
+        <style>
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body background="Images/background.jpg">
+        <script>
+            if($(window).width() > ($(window).height() + ($(window).height() * 0.25))){
+                var wide = '', tall = '';
+                wide = "<div width='96.3%' style='padding-top:0.8%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://google.ca'><img src='Images/google.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://inbox.google.com'><img src='Images/inbox.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://drive.google.com'><img src='Images/Drive.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://youtube.com'><img src='Images/youtube.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://facebook.com'><img src='Images/facebook.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://metasearch.torrentproject.com/'><img src='Images/Torrent Project.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://alternativeto.net'><img src='Images/alternative.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://tastekid.com'><img src='Images/emmy-tastekid.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://stumbleupon.com'><img src='Images/StumbleUpon-Logo.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:0.8%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://deezer.com'><img src='Images/deezer.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://www.dlcompare.com/'><img src='Images/DLCOMPARE-LOGO.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='https://easyweb.td.com/waw/idp/login.htm?execution=e1s1'><img src='Images/TD.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://paypal.com'><img src='Images/Paypal-Logo.jpg' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://imdb.com'><img src='Images/imdb.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://www.mobafire.com/'><img src='Images/Mobafire.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://www.tutorialspoint.com/index.htm'><img src='Images/tp.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://ign.com'><img src='Images/ign-logo.jpg' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://game-debate.com'><img src='Images/GD.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:0.8%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://thingiverse.com'><img src='Images/thingiverse-trimensional.jpg' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://tinkercad.com'><img src='Images/tinkercad-logo_300pdi.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='https://www.uleth.ca/bridge/twgkwbis.P_WWWLogin'><img src='Images/uleth.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='https://login.uleth.ca/cas/login?service=https%3A%2F%2Fmoodle.uleth.ca%2Flogin%2Findex.php'><img src='Images/moodle.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://9gag.com'><img src='Images/9gag.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://damnlol.com'><img src='Images/damnlol1.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://ebay.ca'><img src='Images/ebay.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://amazon.ca'><img src='Images/amazon-logo-png-81tguho6.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://kijiji.ca'><img src='Images/kijiji.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:0.8%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://netflix.com'><img src='Images/Netflix_mirror.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://www.cokeandpopcorn.ch/tvsection.php'><img src='Images/cp.jpg' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://kissanime.com'><img src='Images/KissAnime.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://geektv.me'><img src='Images/Geek TV.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://kissmanga.com'><img src='Images/KissManga.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://roosterteeth.com'><img src='Images/RoosterTeeth_logo.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://kisscartoon.com'><img src='Images/KissCartoon.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://ctv.ca'><img src='Images/ctv.gif' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:0.8%;'>"+
+                        "<a href='http://ckbdfm.streamon.fm'><img src='Images/ckbdfm.png' width='10.3%' height='auto'></a>"+
+                    "</span>"+
+                "</div>";
+                document.write(wide);
+            }
+            else
+                tall = "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://google.ca'><img src='Images/google.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://inbox.google.com'><img src='Images/inbox.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://drive.google.com'><img src='Images/Drive.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://youtube.com'><img src='Images/youtube.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://facebook.com'><img src='Images/facebook.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://metasearch.torrentproject.com/'><img src='Images/Torrent Project.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://alternativeto.net'><img src='Images/alternative.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://tastekid.com'><img src='Images/emmy-tastekid.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://stumbleupon.com'><img src='Images/StumbleUpon-Logo.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://deezer.com'><img src='Images/deezer.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://www.dlcompare.com/'><img src='Images/DLCOMPARE-LOGO.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='https://easyweb.td.com/waw/idp/login.htm?execution=e1s1'><img src='Images/TD.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://paypal.com'><img src='Images/Paypal-Logo.jpg' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://imdb.com'><img src='Images/imdb.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://www.mobafire.com/'><img src='Images/Mobafire.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://www.tutorialspoint.com/index.htm'><img src='Images/tp.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://ign.com'><img src='Images/ign-logo.jpg' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://game-debate.com'><img src='Images/GD.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://thingiverse.com'><img src='Images/thingiverse-trimensional.jpg' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://tinkercad.com'><img src='Images/tinkercad-logo_300pdi.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='https://myhorizon.lethbridgecollege.ca'><img src='Images/lc.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://lethbridge.instructure.com'><img src='Images/Canvas-Logo.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://9gag.com'><img src='Images/9gag.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://damnlol.com'><img src='Images/damnlol1.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://ebay.ca'><img src='Images/ebay.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://amazon.ca'><img src='Images/amazon-logo-png-81tguho6.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://kijiji.ca'><img src='Images/kijiji.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://netflix.com'><img src='Images/Netflix_mirror.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://www.cokeandpopcorn.ch/tvsection.php'><img src='Images/cp.jpg' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://kissanime.com'><img src='Images/KissAnime.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://geektv.me'><img src='Images/Geek TV.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://kissmanga.com'><img src='Images/KissManga.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://roosterteeth.com'><img src='Images/RoosterTeeth_logo.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>"+
+                "<div width='96.3%' style='padding-top:1.7%;float:center;white-space:nowrap;'>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://kisscartoon.com'><img src='Images/KissCartoon.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://ctv.ca'><img src='Images/ctv.gif' width='31%' height='auto'></a>"+
+                    "</span>"+
+                    "<span style='padding-left:1.7%;'>"+
+                        "<a href='http://ckbdfm.streamon.fm'><img src='Images/ckbdfm.png' width='31%' height='auto'></a>"+
+                    "</span>"+
+                "</div>";
+                document.write(tall);
+        </script>
+    </body>
+</html>
